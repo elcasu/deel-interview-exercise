@@ -9,7 +9,7 @@ type listProps = {
 
 const highlight = (text: string, sentence: string) => {
   const wordRegex = new RegExp(`(${text})`, 'gi')
-  const result = sentence.replace(wordRegex, '<span>$1</span>')
+  const result = sentence.replace(wordRegex, '<span data-testid="highlight">$1</span>')
   return result
 }
 
@@ -33,12 +33,13 @@ function List({ text, items, loading, onItemClick }: listProps) {
   }
 
   return (
-    <div className='items'>
+    <div className='items' data-testid='finder-items'>
       {
         items.map((item, index) => (
           <div
             className='item'
             key={ `list-item-${index}` }
+            data-testid='finder-item'
             dangerouslySetInnerHTML={{
               __html: highlight(text, item)
             }}
