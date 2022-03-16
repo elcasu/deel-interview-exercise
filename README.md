@@ -3,7 +3,9 @@
 ## Start the application in development mode
 In order to run the project, run the following command:
 
-### `npm start`
+```bash
+npm start
+```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -11,11 +13,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 To run the tests, you can run the command:
 
-### `npm test`
+```bash
+npm test
+```
 
 ## Build the app for production
 
 To create a production build, just run the following command. It will store the built
 app within `build` folder.
 
-### `npm run build`
+```bash
+npm run build
+```

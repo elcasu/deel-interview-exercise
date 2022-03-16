@@ -2,7 +2,7 @@
 
 ## 1- What is the difference between Component and PureComponent? Give an example where it might break my app
 
-The main difference between Component and PureComponent is that PureComponent handles the `componentShouldUpdate`
+The main difference between Component and PureComponent is that PureComponent handles the `shouldComponentUpdate`
 lifecycle transparently, while Component requires the user to implement it if needed.
 
 ## 2- Context + shouldComponentUpdate might be dangerous. Can think of why is that?
@@ -83,7 +83,7 @@ parent information.
 
 ## 4 - Give 2 ways to prevent components from re-rendering
 
-- One way is to use `componentShouldUpdate` method, or defining the component as React.PureComponent in class
+- One way is to use `shouldComponentUpdate` method, or defining the component as React.PureComponent in class
 based components.
 
 - For functional components, we can use the PureComponent equivalent, wrapping the component within `React.memo` HOC
@@ -285,7 +285,7 @@ It is an async method for performance reasons, so React updates all the states i
 
 ## 9 - List the steps needed to migrate a class to function component
 
-- change the class expresion to a function
+- Change the class expresion to a function
 - All the class methods, must be converted to functions
 - Get rid of `this` references, since all the methods/attributes will be within the function scope
 - The state initialized in the constructor, must be initialized with the `useState` hook
