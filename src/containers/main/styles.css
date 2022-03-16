@@ -1,0 +1,27 @@
+.header {
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  background-color: #dfeeff;
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0 auto;
+}
+
+.body {
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.finder-wrapper {
+  margin-top: 12px;
+  width: 600px;
+}
