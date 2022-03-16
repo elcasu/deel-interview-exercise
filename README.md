@@ -1,5 +1,14 @@
 # Deel interview test
 
+## Initial setup
+
+- Clone the project to have it locally
+- Install the dependencies, running
+
+```bash
+npm install
+```
+
 ## Start the application in development mode
 In order to run the project, run the following command:
 
