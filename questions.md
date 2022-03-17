@@ -115,7 +115,7 @@ const ItemList = ({ items }) => {
 ```javascript
 import { React } from 'react'
 
-const items = [ 'item1', 'item2', item3 ]
+const items = [ 'item1', 'item2', 'item3' ]
 
 const MyComponent = () => {
   return (
@@ -144,6 +144,7 @@ We can wrap our component within Redux connect HOC, passing the state and dispat
 
 ```javascript
 import { connect } from 'react-redux'
+import { actions } from '../actions/some-feature'
 import SomeFeature from './SomeFeature'
 
 const mapStateToProps = (state) => {
